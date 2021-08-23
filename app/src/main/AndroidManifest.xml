@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jaemin.androidfeaturecollection">
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,18 +13,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFeatureCollection">
         <activity
-            android:name=".PreventScreenshotExample"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".biometric.FingerPrintAuthenticationActivity"
+            android:exported="true">
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".notification.NotificationActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".lockscreen.LockScreenActivity"
             android:exported="true">
 
+        </activity>
+        <activity
+            android:name=".PIPExampleActivity"
+            android:exported="true"
+            android:supportsPictureInPicture="true" />
+        <activity
+            android:name=".PreventScreenshotExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
     </application>
 
