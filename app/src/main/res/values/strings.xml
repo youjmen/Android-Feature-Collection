@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidFeatureCollection</string>
+    <string name="channel1">채널</string>
+
 </resources>

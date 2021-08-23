@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Twinny/Android-Feature-Collection/app/src/main/res/layout/activity_finger_print_authentication.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/Twinny/Android-Feature-Collection/app/src/main/res/layout/activity_lock_screen.xml" value="0.12" />
+        <entry key="..\:/Users/Twinny/Android-Feature-Collection/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Twinny/Android-Feature-Collection/app/src/main/res/layout/activity_notification.xml" value="0.26875" />
+        <entry key="..\:/Users/Twinny/Android-Feature-Collection/app/src/main/res/layout/activity_pipexample.xml" value="0.29846014492753625" />
+        <entry key="..\:/Users/Twinny/Android-Feature-Collection/app/src/main/res/layout/item_main.xml" value="0.20989583333333334" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
