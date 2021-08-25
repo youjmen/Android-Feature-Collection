@@ -13,18 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFeatureCollection">
         <activity
+            android:name=".SpringActivity"
+            android:exported="true" />
+        <activity
             android:name=".biometric.FingerPrintAuthenticationActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".notification.NotificationActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".lockscreen.LockScreenActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".PIPExampleActivity"
             android:exported="true"
@@ -34,12 +33,12 @@
             android:exported="true" />
         <activity
             android:name=".main.MainActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

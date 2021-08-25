@@ -1,5 +1,6 @@
 package com.jaemin.androidfeaturecollection.main
 
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -65,6 +66,9 @@ class MainViewHolder(private val binding : ItemMainBinding) : RecyclerView.ViewH
 
     fun bind(data : Pair<String, Class<*>>){
         binding.tvContent.text = data.first
+        binding.root.setOnClickListener {
+            binding.root.context.startActivity(Intent(binding.root.context, data.second))
+        }
 
     }
 

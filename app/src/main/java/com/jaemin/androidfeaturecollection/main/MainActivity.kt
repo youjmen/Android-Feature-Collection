@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import com.jaemin.androidfeaturecollection.PIPExampleActivity
 import com.jaemin.androidfeaturecollection.PreventScreenshotExampleActivity
 import com.jaemin.androidfeaturecollection.R
+import com.jaemin.androidfeaturecollection.SpringActivity
 import com.jaemin.androidfeaturecollection.biometric.FingerPrintAuthenticationActivity
 import com.jaemin.androidfeaturecollection.databinding.ActivityMainBinding
 import com.jaemin.androidfeaturecollection.lockscreen.LockScreenActivity
@@ -22,7 +23,8 @@ class MainActivity : AppCompatActivity() {
             Pair("Biometric", FingerPrintAuthenticationActivity::class.java),
             Pair("Notification", NotificationActivity::class.java),
             Pair("PIP", PIPExampleActivity::class.java),
-            Pair("PreventScreenshot", PreventScreenshotExampleActivity::class.java)
+            Pair("PreventScreenshot", PreventScreenshotExampleActivity::class.java),
+            Pair("Spring", SpringActivity::class.java)
         )
         adapter.addItems(list)
         binding.btnAdd.setOnClickListener {
